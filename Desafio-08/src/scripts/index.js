@@ -41,8 +41,7 @@ async function getUserData(userName){
     const repositoriesResponse = await getRepositories(userName)
     const followersResponse = await getFollowers(userName)
     const followingsResponse = await getFollowing(userName)
-    const eventsResponse = await getEvents(userName)
-    console.log(eventsResponse)    
+    const eventsResponse = await getEvents(userName)    
     user.setEvents(eventsResponse)
     user.setFollowers(followersResponse)
     user.setFollowings(followingsResponse)
@@ -52,5 +51,3 @@ async function getUserData(userName){
 }
 let teste = 'https://api.github.com/users/devemdobro/events'
 console.log(teste)
-
-//teste
