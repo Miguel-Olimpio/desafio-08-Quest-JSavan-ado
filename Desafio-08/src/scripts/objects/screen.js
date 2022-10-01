@@ -48,7 +48,7 @@ const screen = {
             if(events.type === "PushEvent"){
                 eventsItens += `<li> 
                         <h3>${events.repo.name}</h3>    
-                        <p> -${events.payload.commits[0].message}  <p>
+                        <p> -${events.payload.commits[0].message ?? 'Não commitado' }  <p>
                         </li>`
                     }else if(events.type === "CreateEvent"){
                         eventsItens += `<li> 
