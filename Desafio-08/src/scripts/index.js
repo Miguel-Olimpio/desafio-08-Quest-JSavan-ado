@@ -53,3 +53,4 @@ async function getUserData(userName){
 let teste = 'https://api.github.com/users/devemdobro/events'
 console.log(teste)
 
+//teste
